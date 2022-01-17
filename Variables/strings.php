@@ -23,3 +23,31 @@ print '<ul>
 
 
 ?>
+********************************************************
+<p>
+
+<?php 
+
+// string concatenation
+print 'bread' . 'fruit';
+
+
+?>
+</p>
+
+<p>
+<?php 
+
+print "It's a beautiful day " . 'in the neighbourhood';
+
+?>
+
+</p>
+
+<?php 
+
+// string concatenation
+print 'The price is: ' . '$3.95';
+
+?>
+
