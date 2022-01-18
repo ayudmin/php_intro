@@ -60,7 +60,45 @@ print '<br>';
 print strtoupper('Beef, CHICKEN, Pork, ducK');
 
 
+// uppercasing the first letters of words combined with locwercasing
+
+print '<br>';
+print ucwords(strtolower('AYUME FRANCIS'));
 
 
+// extracting portion of data from a post using substr
+
+// grab the first 30 bytes of  $_POST['comments']
+
+print '<br>';
+$_POST['comments'] = "The Fresh Fish with Rice Noodle was delicious, but I didn't like the Beef Tripe.";
+print substr($_POST['comments'],0,30);
+
+// add an ellipsis
+
+print '....';
+
+// extracting end of string with substr
+
+$_POST['card'] = '114544101';
+
+print '<br>';
+print '<br>';
+print 'Card: xx';
+print substr($_POST['card'], -4,4);
+
+
+// replacing strings with str_replace()
+
+$class = 'my_class';
+
+$html = '<span class="{class}">First thing here blabla</span><br>
+<span class="{class}">Second thing here blabla</span>
+';
+
+
+print '<br>';
+print '<br>';
+print str_replace('{class}', $class, $html);
 
 ?>
