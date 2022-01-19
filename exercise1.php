@@ -101,7 +101,7 @@ if ($_raised == 1){
 
 $hamburger = 4.95;
 $milkshake = 1.95;
-$cola = 85;
+$cola = 0.85;
 $sales_tax = 7.5/100;
 $pre_tax = 0.16;
 
@@ -114,4 +114,41 @@ $total = $food + $tax_rate + $tip;
 print '<br>';
 print '<br>';
 print 'The total cost is: $' . $total;
+
+
+// Activity 4
+
+$hamburger = 4.95;
+$milkshake = 1.95;
+$cola = 0.85;
+$sales_tax = 7.5/100;
+$pre_tax = 0.16;
+
+$food = ($hamburger * 2) + $milkshake + $cola;
+$tax_rate = $food * $sales_tax;
+$tip = $food * $pre_tax;
+
+$total = $food + $tax_rate + $tip;
+
+print '<br>';
+print '<br>';
+print '***********************************************************';
+print '<br>';
+print '<br>';
+printf("%d %-9s at \$%.2f each:  \$%5.2f\n",2,'Hamburger', $hamburger, 2 * $hamburger);
+print '<br>';
+print '<br>';
+printf("%d %-9s at \$%.2f each: \$%5.2f\n", 1,'Milkshake', $milkshake, $milkshake);
+print '<br>';
+print '<br>';
+printf("%d %-9s at \$%.2f each: \$%5.2f\n",1,'Cola',$cola,$cola);
+print '<br>';
+print '<br>';
+printf("%25s:  \$%5.2f\n", 'Food Total', $food);
+print '<br>';
+print '<br>';
+printf("%25s: \$%5.2f\n", 'Food and Tax Total', $food + $tax_rate);
+print '<br>';
+print '<br>';
+printf("%25s: \$%5.2f\n",'Food, Tax and Tip Total', $total)
 ?>
