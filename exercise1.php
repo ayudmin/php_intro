@@ -8,8 +8,11 @@ $first_name = 'Ayume';
 $last_name = 'Francis';
 
 $combined =  $first_name . ' ' . $last_name;
+$name = "$first_name $last_name";
 $combined_length = strlen($combined);
 
+print $name;
+print '<br>';
 print $combined;
 print '<br>';
 print '<br>';
@@ -17,8 +20,7 @@ print $combined_length;
 
 print '<br>';
 print '<br>';
-print '<br>';
-print '<br>';
+print '***************************************************************';
 
 /* Activity 2
  A program that uses the increament operator ++ and combined multiplication operator (*=) to print numbers from 1 - 5 and 
@@ -96,6 +98,30 @@ if ($_raised == 1){
     }
 }
 
+// solution activity 2
+
+print '<br>';
+print '<br>';
+
+$n = 1; $p = 2;
+print "$n, $p\n";
+print '<br>';
+$n ++;$p *=2;
+print "$n, $p\n";
+print '<br>';
+$n ++; $p *=2;
+print "$n, $p";
+print '<br>';
+$n ++; $p *=2;
+print "$n, $p";
+print '<br>';
+$n ++; $p *=2;
+print "$n, $p";
+
+print '<br>';
+print '<br>';
+
+print '***************************************************************';
 
 // Activity 3
 
@@ -115,7 +141,8 @@ print '<br>';
 print '<br>';
 print 'The total cost is: $' . $total;
 
-
+print '<br>';
+print '***************************************************************';
 // Activity 4
 
 $hamburger = 4.95;
@@ -131,8 +158,6 @@ $tip = $food * $pre_tax;
 $total = $food + $tax_rate + $tip;
 
 print '<br>';
-print '<br>';
-print '***********************************************************';
 print '<br>';
 print '<br>';
 printf("%d %-9s at \$%.2f each:  \$%5.2f\n",2,'Hamburger', $hamburger, 2 * $hamburger);
@@ -150,5 +175,8 @@ print '<br>';
 printf("%25s: \$%5.2f\n", 'Food and Tax Total', $food + $tax_rate);
 print '<br>';
 print '<br>';
-printf("%25s: \$%5.2f\n",'Food, Tax and Tip Total', $total)
+printf("%25s: \$%5.2f\n",'Food, Tax and Tip Total', $total);
+print '<br>';
+
+print '***************************************************************';
 ?>
