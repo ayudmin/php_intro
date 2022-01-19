@@ -15,9 +15,6 @@ print '<br>';
 print '<br>';
 print $combined_length;
 
-
-
-
 print '<br>';
 print '<br>';
 print '<br>';
@@ -99,4 +96,22 @@ if ($_raised == 1){
     }
 }
 
+
+// Activity 3
+
+$hamburger = 4.95;
+$milkshake = 1.95;
+$cola = 85;
+$sales_tax = 7.5/100;
+$pre_tax = 0.16;
+
+$food = ($hamburger * 2) + $milkshake + $cola;
+$tax_rate = $food * $sales_tax;
+$tip = $food * $pre_tax;
+
+$total = $food + $tax_rate + $tip;
+
+print '<br>';
+print '<br>';
+print 'The total cost is: $' . $total;
 ?>
