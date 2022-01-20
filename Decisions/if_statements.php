@@ -119,6 +119,7 @@ if ($age >= 65){
 }
 
 // logical operators
+$age = 40;
 
 if (($age >= 13) && ($age < 65)){
     print "You are too old for a kid's discount and too young for an adult's";
