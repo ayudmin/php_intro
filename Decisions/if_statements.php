@@ -91,4 +91,38 @@ if ($laham == 'goat meat'){
 
 
 // checking for inequality
+
+if ($messages != 10){
+
+    // this gets executed since $message is empty and not equal to 10
+    print '<br>';
+    print '<br>';
+    print 'You dont have 10 new messages.';
+}
+
+if ($dinner != 'porredge'){
+    print '<br>';
+    print '<br>';
+    print 'I guess we are out of floor';
+}
+
+
+    // use of greater, less 
+
+if ($age > 17){
+    print 'You are old enough to download the movie';
+}
+
+if ($age >= 65){
+    print 'You are old enough for the discount';
+
+}
+
+// logical operators
+
+if (($age >= 13) && ($age < 65)){
+    print "You are too old for a kid's discount and too young for an adult's";
+}
+
+
 ?>
