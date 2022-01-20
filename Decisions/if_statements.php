@@ -50,5 +50,45 @@ if ($logged_in){
 
 // combinig if elseif and else statements on a program
 
+$base_case = FALSE;
+$case_1 = FALSE;
+$case_2 = true;
 
+
+if ($base_case){
+    print '<br>';print '<br>';
+    print 'base case';
+} elseif ($case_1){
+    print '<br>';print '<br>';
+    print 'case_1';
+} elseif ($case_2){
+    print '<br>';print '<br>';
+    print 'case 2';
+} else {
+    print '<br>';print '<br>';
+    print 'Hey, i dont know u!';
+    print '<br>';print '<br>';
+}
+
+
+
+// comparisons in making decisions
+
+if ($new_messages == 10){
+    print 'You have 10 new messages';
+}
+
+if ($new_messages == $max_messeges){
+
+    // this gets printed since $max and $new are empty and equal
+    print '<br>';
+    print 'you have the maximum number of messages';
+}
+
+if ($laham == 'goat meat'){
+    print 'Yum! i love goat meat';
+}
+
+
+// checking for inequality
 ?>
