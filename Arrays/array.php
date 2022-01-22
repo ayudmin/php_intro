@@ -107,4 +107,17 @@ print '<br>';
 print $PERSON['name'];
 print $PERSON['0'];
 
+// assigning range values
+
+$numbers = range(2,5);
+
+print '<br>';
+print '<br>';
+print "$numbers[0], $numbers[1], $numbers[2]";
+
+$letters = range('a','z');
+print '<br>';
+print "$letters[0], $letters[1], $letters[2], $letters[3], $letters[4], $letters[5], $letters[6], ...., $letters[25]";
+print '<br>';
+print count($letters);
 ?>
