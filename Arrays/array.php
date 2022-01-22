@@ -81,5 +81,30 @@ $price = array(
 
 );
 
+print $price['gasket'];
+print '<br>';
+print '<br>';
+print $addresses[0];
+
+// adding values to the end of an array
+
+$family = array('Fred','William');
+$family[] = 'Francis';
+
+
+print '<br>';
+print '<br>';
+print "$family[0] $family[1]$family[2]";
+
+$PERSON = array(
+    'name' => "person1"
+);
+
+$PERSON[] = 'Dorin';
+
+print '<br>';
+print '<br>';
+print $PERSON['name'];
+print $PERSON['0'];
 
 ?>
