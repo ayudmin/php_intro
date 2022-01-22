@@ -42,4 +42,27 @@ print '<br>';
 print '<br>';
 print count($cars);
 
+
+echo $addresses[0];
+
+echo $addresses;
+
+$addresses[0] = "spam@cyperpromo.net";
+print $addresses;
+
+// assigning of indexed arrays
+
+$addresses[0] = "root@example.com";
+$addresses[1] = "abuse@example.com";
+$addresses[2] = "spam@example.com";
+
+
+// assigning an associative array
+
+$price['gasket'] = 15.29;
+$price['wheel'] = 20.5;
+$price['tire'] = 50.00;
+
+
+
 ?>
