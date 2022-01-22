@@ -64,5 +64,22 @@ $price['wheel'] = 20.5;
 $price['tire'] = 50.00;
 
 
+// initializing an array using the array() construct
+
+
+$addresses = array("spam@cyberpromo.net","abuse@example.com","root@example.com");
+
+print '<br>';
+print '<br>';
+
+// creating associative arrays using the array() construct
+
+$price = array(
+    'gasket' => 15.29,
+    'wheel' => 20.5,
+    'tire' => 50.00
+
+);
+
 
 ?>
