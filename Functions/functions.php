@@ -9,7 +9,7 @@
 //returning value from a function
 // using a return value in an if statement
 // returning an array from a function
-
+// multiple return statements
 
 
 function page_header($page_id, $color = 'red', $title = 'my 1site'){
@@ -79,4 +79,17 @@ if ($total > 10){
     print 'I will pay using cash';
 }
 
+
+function payment_method($cash_in_hand, $amount){
+    if ($amount > $cash_in_hand){
+        return 'Credit Card';
+    } else {
+        return 'Cash';
+    }
+}
+
+print $total[0];
+$method_used = payment_method(1000,$total[1]);
+print '<br>';
+print $method_used;
 ?>
