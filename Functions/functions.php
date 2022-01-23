@@ -8,6 +8,7 @@
 // changing argument values
 //returning value from a function
 // using a return value in an if statement
+// returning an array from a function
 
 
 
@@ -44,14 +45,27 @@ countdown($counter);
 function restaurant_check($meal,$tax,$tip){
     $tax_amount = $meal * ($tax / 100);
     $tip_amount = $meal * ($tip / 100);
-
+    
+    $total_notip = $meal + $tax_amount;
     $total_amount = $meal + $tax_amount + $tip_amount;
-    return $total_amount;
+
+    return array($total_amount, $total_notip);
 }
 
 $price = restaurant_check(500,20,10);
 print '<br>';
-print "$" . "$price";
+//print "$" . "$price";
+
+$totals = restaurant_check(500,20,10);
+
+if ($total[0] < 1000){
+    print 'total amount plus tip is less than 1000';
+}
+
+if ($total[1] < 200){
+    print 'Amount with no tip is less than 200';
+}
+
 
 
 $total = restaurant_check(15.22,8.25,15);
