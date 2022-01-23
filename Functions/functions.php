@@ -5,6 +5,7 @@
 // default values for arguments
 // multiple arguments
 // Multiple optional arguments
+// changing argument values
 
 function page_header($page_id, $color = 'red', $title = 'my 1site'){
     print '<html><head><title>Welcome to ' . $title . '</title></head>';
@@ -25,7 +26,15 @@ function page_footer(){
 }
 
 
+function countdown($top){
+    while($top > 0){
+        print "$top..";
+        $top--;
+    }
+}
 
+$counter = 5;
+countdown($counter);
 
 
 ?>
