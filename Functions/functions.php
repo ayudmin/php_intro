@@ -10,6 +10,7 @@
 // using a return value in an if statement
 // returning an array from a function
 // multiple return statements
+//functions that return true or false
 
 
 function page_header($page_id, $color = 'red', $title = 'my 1site'){
@@ -92,4 +93,31 @@ print $total[0];
 $method_used = payment_method(1000,$total[1]);
 print '<br>';
 print $method_used;
+
+
+
+function can_pay_cash($cash_in_hand, $amount){
+    if ($amount > $cash_in_hand){
+        return FALSE;
+    } else {
+        return TRUE;
+    }
+}
+
+
+$available_total = restaurant_check(16.22,8.25,15);
+print '<br>';
+print '<br>';
+print $available_total[0];
+
+if (can_pay_cash(2000,$available_total[0])){
+    print '<br>';
+    print '<br>';
+    print 'I can pay in cash';
+} else {
+    print '<br>';
+    print '<br>';
+    print 'Time for credit card';
+}
+
 ?>
