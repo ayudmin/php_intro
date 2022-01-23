@@ -7,6 +7,7 @@
 // Multiple optional arguments
 // changing argument values
 //returning value from a function
+// using a return value in an if statement
 
 
 
@@ -51,5 +52,17 @@ function restaurant_check($meal,$tax,$tip){
 $price = restaurant_check(500,20,10);
 print '<br>';
 print "$" . "$price";
+
+
+$total = restaurant_check(15.22,8.25,15);
+
+print '<br>';
+print 'I only have $20 in cash, so...';
+
+if ($total > 10){
+    print 'I will pay using credit card';
+} else {
+    print 'I will pay using cash';
+}
 
 ?>
