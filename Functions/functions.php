@@ -10,7 +10,10 @@
 // using a return value in an if statement
 // returning an array from a function
 // multiple return statements
-//functions that return true or false
+// functions that return true or false
+// assignment and function call inside a test expression
+
+
 
 
 function page_header($page_id, $color = 'red', $title = 'my 1site'){
@@ -119,5 +122,30 @@ if (can_pay_cash(2000,$available_total[0])){
     print '<br>';
     print 'Time for credit card';
 }
+
+
+function complete_bill($meal,$tax,$tip,$cash_in_hand){
+    $tax_amount = $meal * ($tax / 100);
+    $tip_amount = $meal * ($tip / 100);
+    $total_amount = $meal + $tax_amount + $tip_amount;
+
+    if ($total_amount > $cash_in_hand){
+        return FALSE;
+    } else {
+        return $total_amount;
+    }
+}
+
+
+if ($total = complete_bill(15.22,8.25,15,10)){
+    print '<br>';
+    print '<br>';
+    print  "Am happy to pay $total";
+} else{
+    print '<br>';
+    print '<br>';
+    print 'I dont have enough money can i wash some dishes';
+}
+
 
 ?>
