@@ -1,6 +1,7 @@
 <?php 
 
 // variable scope
+// $GLOBALS array
 
 $dinner =   'Curry Cuttlefish';
 
@@ -32,8 +33,18 @@ print "Regular dinner is $dinner";
 
 
 
+function microbiotic_dinner(){
+    $dinner = 'some veg';
+    print "Dinner is $dinner";
+    print "But i would rather have, ";
+    print $GLOBALS['dinner'];
+    print '<br>';
 
-
-
+}
+print '<br>';
+print '<br>';
+microbiotic_dinner();
+print '<br>';
+print "Regular dinner is $dinner";
 
 ?>
