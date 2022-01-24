@@ -6,7 +6,7 @@
 // Defining a static method
 // Calling a static method
 // Initializing an object with a constructor
-
+// Calling constructors
 
 
 
@@ -29,13 +29,10 @@ class Entree{
 }
 
 
-$soup = new Entree;
-$soup->name = 'Chicken Soup';
-$soup->ingredients = array('Chicken','water');
+$soup = new Entree('Chicken Soup', array('Chicken','water'));
 
-$sandwitch = new Entree;
-$sandwitch->name = 'Chicken Sandwich';
-$sandwitch->ingredients = array('Chicken', 'bread');
+
+$sandwitch = new Entree('Sandwitch', array('bread','Chicken'));
 
 
 foreach (['Chicken','water','bread','lemon'] as $ing ){
