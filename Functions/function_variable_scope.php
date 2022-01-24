@@ -4,6 +4,7 @@
 // $GLOBALS array
 // modifying a variable with $BLOBALS
 // global keyword
+// declaring argument types
 
 $dinner =   'Curry Cuttlefish';
 
@@ -79,6 +80,22 @@ function korofo_dinner(){
 }
 
 
-korofo_dinner()
+korofo_dinner();
+
+
+function countdown(int $top){
+    while ($top > 0){
+        print $top;
+        $top--;
+    }
+    print 'Boom';
+}
+
+
+$counter = 5;
+print '<br>';
+countdown('grunt');
+print '<br>';
+print $counter;
 
 ?>
