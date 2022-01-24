@@ -4,6 +4,9 @@
 // defining classes
 // creating objects from classes
 // Defining a static method
+// Calling a static method
+
+
 
 class Entree{
     public $name;
@@ -38,5 +41,10 @@ foreach (['Chicken','water','bread','lemon'] as $ing ){
         print '<br>';
     }
 }
+
+
+$sizes = Entree::get_sizes();
+
+print $sizes[1];
 
 ?>
