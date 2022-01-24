@@ -3,6 +3,7 @@
 
 // defining classes
 // creating objects from classes
+// Defining a static method
 
 class Entree{
     public $name;
@@ -10,6 +11,10 @@ class Entree{
 
     public function hasIngredient($ingredient){
         return in_array($ingredient, $this->ingredients);
+    }
+
+    public static function get_sizes(){
+        return array('large','medium','small');
     }
 }
 
