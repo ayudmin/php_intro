@@ -8,6 +8,7 @@
 // Initializing an object with a constructor
 // Calling constructors
 // Throwing an exception
+// Causing an exception to be thrown
 
 
 
@@ -51,6 +52,13 @@ foreach (['Chicken','water','bread','lemon'] as $ing ){
         print '<br>';
     }
 }
+
+$drink = new Entree('Glass of milk', 'milk');
+
+if ($drink->hasIngredient('milk')){
+    print 'Yummy';
+}
+
 
 
 $sizes = Entree::get_sizes();
