@@ -7,6 +7,7 @@
 // Calling a static method
 // Initializing an object with a constructor
 // Calling constructors
+// Throwing an exception
 
 
 
@@ -15,8 +16,13 @@ class Entree{
     public $ingredients = array();
 
     public function __construct($name, $ingredients){
+        if (! array($ingredients)){
+            throw new Exception ('$ingredients must be an array');
+        }
+
         $this->name = $name;
         $this->ingredients = $ingredients;
+        
     }
 
     public function hasIngredient($ingredient){
