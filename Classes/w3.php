@@ -11,11 +11,8 @@ class Fruit{
 
     // methods (functions)
 
-    function set_name($name){
+    function __construct($name,$color){
         $this->name = $name;
-    }
-
-    function set_color($color){
         $this->color = $color;
     }
 
@@ -30,13 +27,8 @@ class Fruit{
 
 }
 
-$apple = new Fruit();
-$banana = new Fruit();
-
-$banana->set_name('Banana');
-$banana->set_color('Yellow');
-$apple ->set_name('Apple');
-$apple->set_color('Red');
+$apple = new Fruit('Apple','Red');
+$banana = new Fruit('Banana','Yello');
 
 echo $apple->get_name();
 print('<br>');
