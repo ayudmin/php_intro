@@ -43,6 +43,10 @@ print('<br>');
 print $banana->get_name();
 print('<br>');
 print $banana->get_color();
+print('<br>');
+// instance of
+
+var_dump($apple instanceof Fruit);
 
 
 ?>
