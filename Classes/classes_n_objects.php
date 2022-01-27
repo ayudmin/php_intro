@@ -53,6 +53,7 @@ foreach (['Chicken','water','bread','lemon'] as $ing ){
     }
 }
 
+
 $drink = new Entree('Glass of milk', 'milk');
 
 if ($drink->hasIngredient('milk')){
