@@ -11,6 +11,9 @@
 
         echo 'hello world';
 
+        print '<hr>';
+
+        echo '<p>This is a paragraph</p>';
      
     ?>
 </body>
