@@ -9,11 +9,16 @@
 <body>
     <?php 
 
-        echo 'hello world';
+    $characterName = 'George';
+    $characterAge = 70;
 
-        print '<hr>';
+    echo "There once was a man named $characterName <br>";
+    echo "He was $characterAge years old <br>";
 
-        echo '<p>This is a paragraph</p>';
+    $characterAge = 80;
+    echo "He really liked the name $characterName <br>";
+    echo "But did't like being $characterAge <br>";
+
      
     ?>
 </body>
