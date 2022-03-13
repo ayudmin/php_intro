@@ -1,53 +1,25 @@
 <?php 
 
-print 'i would like a bowl of soup.';
-print 'chicken';
-print '06520';
-print '"I am eating dinner," he growled.';
-
-// All statements get printed on the same line since the print function does'nt have line break
+$greeting = 'hello';
 
 
-// printing a text with a quote in one word can be accomplished by a slash before the quote
-print 'we\'ll each have a bowl of soup';
+// getting string at index 0
 
-// using \\ to escape a backslash
-print 'Use \\ to escape a character in a string';
+echo $greeting[0] . "<br>";
 
-print '<ul>
+// getting length of string
 
-<li>Beef chow-Fun</li>
-<li>Sauteed Pea Shoots</li>
-<li>So Sauce Noodles</li>
-</u>';
+echo strlen($greeting). "<br>";
 
+// replacing indexes values
 
-?>
-********************************************************
-<p>
+echo str_replace("l", "z", $greeting) . "<br>";
 
-<?php 
+// cutting string
 
-// string concatenation
-print 'bread' . 'fruit';
+echo strchr($greeting, "e"). "<br>";
 
 
-?>
-</p>
-
-<p>
-<?php 
-
-print "It's a beautiful day " . 'in the neighbourhood';
-
-?>
-
-</p>
-
-<?php 
-
-// string concatenation
-print 'The price is: ' . '$3.95';
 
 ?>
 
