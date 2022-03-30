@@ -17,4 +17,4 @@ if ($is_male && $is_tall){
     echo "You are not male nor tall";
 }
 
-?>
+?>  
