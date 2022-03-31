@@ -1,21 +1,23 @@
 <?php
 
 
-$name = 'Joe';
+$name = 'pon';
 
-if ($name == 'John'){
 
-    echo $name;
-
-} elseif ($name == 'Joe'){
-
-    echo $name;
-
-} elseif ($name == 'Doe'){
-
-    echo $name;
+switch ($name){
+    case "John":
+        echo $name;
+        break;
+    case "Test":
+        echo $name;
+        break;
+    case "Jon":
+        echo $name;
+        break;
+    case "pon":
+        echo $name;
+        break;
 
 }
-
 
 ?>
