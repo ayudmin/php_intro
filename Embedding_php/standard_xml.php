@@ -12,6 +12,7 @@
     <?php echo "Hello, world!";?><br/>
     How cool is that!
     </p>
+    <input type="text" name="first_name" value="<?php echo 'Peter'; ?>">
 
 </body>
 </html>
