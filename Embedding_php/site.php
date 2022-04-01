@@ -11,6 +11,8 @@
     
     include 'header.html';
 
+    include 'script.php';
+
     include 'footer.html';
     
     ?>
