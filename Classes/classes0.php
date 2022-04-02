@@ -3,9 +3,9 @@
 
 class Person
 {
-    public $name = "";
+    public $name;
 
-    function getName()
+    final function getName()
     {
         return $this->name;
     }
@@ -13,6 +13,17 @@ class Person
     function setName($newName)
     {
         $this->name = $newName;
+    }
+}
+
+class Child extends Person
+{
+
+    // syntax error
+
+    function getName()
+    {
+        // do something
     }
 }
 
